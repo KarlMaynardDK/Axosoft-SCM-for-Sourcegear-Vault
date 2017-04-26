@@ -5,7 +5,7 @@
     <add key="controlFile" value="Path to control file, e.g. latest_version.txt"/>
     
     <!-- Sourcegear vault login -->
-    <add key="vaultUrl" value="http://sourcegearvault.indicia.dk" />
+    <add key="vaultUrl" value="http(s)://your.sourcegearvault.url" />
     <add key="username" value= "vault username"/>
     <add key="password" value= "********"/>
     
