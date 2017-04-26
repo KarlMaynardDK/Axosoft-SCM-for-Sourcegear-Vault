@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <appSettings>
+    <!-- control file keeps a track of the latest checkin version processed -->
+    <add key="controlFile" value="Path to control file, e.g. latest_version.txt"/>
+    
+    <!-- Sourcegear vault login -->
+    <add key="vaultUrl" value="http://sourcegearvault.indicia.dk" />
+    <add key="username" value= "vault username"/>
+    <add key="password" value= "********"/>
+    
+    <!-- Repository and root to process from -->
+    <add key="repos" value= "Repository Name"/>
+    <add key="root" value= "$/root"/>
+    
+    <!-- Axosoft Ontime - Tennant name & Api Key -->
+    <add key="ontimeUrl" value= "https://your-tennant.axosoft.com/"/>
+    <add key="ontimeApiKey" value= "See readme.md"/>
+    
+    <!-- generate & email a change report - NOT IMPLEMENTED YET-->
+    <add key="ChangeReportUsers" value= "user1;user2;user3"/>
+    <add key="ChangeReportEmailTo" value="email1;email2;"/>
+    
+  </appSettings>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.1" />
+  </startup>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-7.0.0.0" newVersion="7.0.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>
